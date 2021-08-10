@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hackathon_fatura/task.dart';
 import 'package:hackathon_fatura/tasks/first_task/first_task_screen.dart';
 import 'package:hackathon_fatura/tasks/second_task/second_task_screen.dart';
+import 'package:hackathon_fatura/tasks/third_task/third_task_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,12 +26,17 @@ class MyHomePage extends StatelessWidget {
   final tasks = [
     Task(
         name: "First task",
-        description: "Optimize Build method",
+        description: "Optimize build method",
         screen: FirstTaskScreen()),
     Task(
-        name: "Second task",
-        description: "Optimize Build method",
-        screen: SecondTaskScreen())
+      name: "Second task",
+      description: "Optimize build method",
+      screen: SecondTaskScreen(),
+    ),
+    Task(
+        name: "Third task",
+        description: "Make movieApp",
+        screen: ThirdTaskScreen())
   ];
 
   MyHomePage({Key? key}) : super(key: key);

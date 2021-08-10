@@ -3,29 +3,28 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 /*
-* Second Task : app consists of FAB and container
-* when i pressed on FAB it's change  container Color
-* but when i pressed on FAB it Rebuild Background widget
-* which it's no need to rebuild
-* you need to optimize build function as
-* when i pressed on Button doesn't rebuild Background widget
-*
-* */
+ Second Task : app consists of FAB and container
+ when i pressed on FAB it changes container Color
+ but when i pressed on FAB it Rebuild Background widget
+ which it doesn't no need to rebuild
+ you need to optimize build function as
+ when i pressed on Button don't rebuild Background widget
+ */
 class SecondTaskScreen extends StatefulWidget {
   @override
   _SecondTaskScreenState createState() => _SecondTaskScreenState();
 }
 
 class BackgroundWidget extends StatelessWidget {
-  final double height;
+  final Widget child;
 
-  BackgroundWidget({required this.height});
+  BackgroundWidget({required this.child});
 
   @override
   Widget build(BuildContext context) {
     print("Building BackgroundWidget");
 
-    return Container(height: height, color: Colors.amber);
+    return Container(color: Colors.amber, child: child);
   }
 }
 
@@ -49,21 +48,14 @@ class _SecondTaskScreenState extends State<SecondTaskScreen> {
         },
         child: Icon(Icons.colorize),
       ),
-      body: Stack(
-        children: [
-          Positioned.fill(
-              child: BackgroundWidget(
-            height: MediaQuery.of(context).size.height,
-          )),
-          Center(
-            child: Container(
-              width: 100,
-              height: 100,
-              color: _randomColor,
-            ),
-          )
-        ],
-      ),
+      body: BackgroundWidget(
+          child: Center(
+        child: Container(
+          width: 100,
+          height: 100,
+          color: _randomColor,
+        ),
+      )),
     );
   }
 }

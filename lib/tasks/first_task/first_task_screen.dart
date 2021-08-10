@@ -3,14 +3,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 /*
-* First Task : app consists of FAB and container
-* when i pressed on FAB it's change  container Color
-* but when i pressed on FAB it Rebuild Background widget
-* which it's no need to rebuild
-* you need to optimize build function as
-* when i pressed on Button doesn't rebuild Background widget
-*
-* */
+ First Task : app consists of FAB and container
+ when i pressed on FAB it changes container Color
+ but when i pressed on FAB it Rebuild Background widget
+ which it doesn't no need to rebuild
+ you need to optimize build function as
+ when i pressed on Button don't rebuild Background widget
+ */
 class FirstTaskScreen extends StatefulWidget {
   @override
   _FirstTaskScreenState createState() => _FirstTaskScreenState();
