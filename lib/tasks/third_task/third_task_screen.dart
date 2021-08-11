@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 
-/* need to make Movie App it's Design like  design.png image
-   that get Popular And Recent movies in tabs
-   with an ability to Add Movie to Favourite List that will be offline
-   storage on device (use any way you want) that will be displayed
-   in Favorite tabs
-   ** you need to handle Errors like NO Internet Connection
+/* Create a movie mobile application that get popular And recent movies
+with an ability to add movie to Favourite list that will be offline
+storage on device (use any way you want) that will be displayed
+in favorite tabs
+
+- design of this app is attached in third_task folder
+- Adding a progress indicator when information is loading
+- Deal with errors coming from the backend (because eventually it will happen!)
+- Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?)
+- Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on)
+
  */
 class ThirdTaskScreen extends StatefulWidget {
   @override
