@@ -1,7 +1,7 @@
 
 # Fatura Hackathon 2021 (Flutter)
 
-This is a small project consists of Three tasks for Fatura flutter hackathon.
+This is a hackathon project consists of Three tasks for Fatura flutter hackathon.
 
 ## Goal
 This project consists of three tasks :
