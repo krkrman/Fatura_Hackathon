@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hackathon_fatura/tasks/third_task/presentation/screens/popular_screen.dart';
+import 'package:hackathon_fatura/tasks/third_task/presentation/screens/top_rated_screen.dart';
 
 /* Create a movie mobile application that get popular And recent movies
 with an ability to add movie to Favourite list that will be offline
@@ -20,6 +22,28 @@ class ThirdTaskScreen extends StatefulWidget {
 class _ThirdTaskScreenState extends State<ThirdTaskScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: TabBar(
+            tabs: [
+              Tab(
+                text: "POPULAR",
+              ),
+              Tab(text: "TOP RATED"),
+              Tab(text: "Favourite"),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: [
+            PopularScreen(),
+            TopRatedScreen(),
+            Center(child: Text("Page 2")),
+          ],
+        ),
+      ),
+    );
   }
 }

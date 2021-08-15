@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hackathon_fatura/buisness_logic/cubits/second_task_cubit/second_task_cubit.dart';
 
 /*
  Second Task : app consists of FAB and container
@@ -34,26 +36,25 @@ class _SecondTaskScreenState extends State<SecondTaskScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var secondTaskCubit = SecondTaskCubit.get(context);
     print("Building SecondTaskScreen");
     return Scaffold(
       appBar: AppBar(
         title: Text("Second task"),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            _randomColor =
-                Colors.primaries[_random.nextInt(Colors.primaries.length)];
-          });
-        },
+        onPressed: () => secondTaskCubit.changeContainerColor(),
         child: Icon(Icons.colorize),
       ),
-      body: BackgroundWidget(
-          child: Center(
-        child: Container(
-          width: 100,
-          height: 100,
-          color: _randomColor,
+      body: BackgroundWidget(child: Center(
+        child: BlocBuilder<SecondTaskCubit, SecondTaskState>(
+          builder: (context, state) {
+            return Container(
+              width: 100,
+              height: 100,
+              color: secondTaskCubit.randomColor,
+            );
+          },
         ),
       )),
     );
