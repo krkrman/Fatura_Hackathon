@@ -19,6 +19,7 @@ in favorite tabs
 - Deal with errors coming from the backend (because eventually it will happen!)
 - Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?)
 - Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on)
+- added pagination mechanism
 
 
 ## Requirements
@@ -38,5 +39,7 @@ Copy this repository to a repository on your name and add the solution there. It
 - A nice splash screen
 - On using sound null safety properly: support null **only** when it really can be null
 - Make sure components/page boundaries are clear
+- Add Unit test
+- Add integration test
 - Follow Dart [style conventions](https://dart.dev/guides/language/effective-dart/style)
 - Show common tools used for you daily development environment (linters, code formatter, git workflow and so on)
