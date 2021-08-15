@@ -1,9 +1,14 @@
 
 # Fatura Hackathon 2021 (Flutter)
 
-This is a hackathon project consists of Three tasks for Fatura flutter hackathon.
+Fatura aspires to be the largest B2B platform in Egypt, the Middle East and Africa. To gain and retain this standing in such a competitive market, Fatura has to cater equally for all its stakeholders, and become instrumental to their daily businesses. The main stakeholder to Fatura is the retailer: this is the small kiosk, medium supermarket or large hypermarket.
+
+People shop more where they spend time more. To keep the retailers engaged, we decided to create an embedded movie recommendation experience in the app.
+
 
 ## Goal
+This is a hackathon project consists of Three tasks for Fatura flutter hackathon.
+
 This project consists of three tasks :
 
 1,2 :  small app consists of FAB and container  when i pressed on FAB it changes container Color
