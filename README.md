@@ -20,7 +20,7 @@ in favorite tabs
 - Deal with errors coming from the backend (because eventually it will happen!)
 - Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?)
 - Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on)
-- added pagination mechanism
+- add pagination mechanism
 
 
 ## Requirements
