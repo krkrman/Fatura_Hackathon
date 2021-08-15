@@ -21,6 +21,7 @@ in favorite tabs
 - Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?)
 - Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on)
 - add pagination mechanism
+- localize app into ar , en (don't localize endpoint response just static text)
 
 
 ## Requirements
