@@ -1,10 +1,11 @@
 
 # Fatura Hackathon 2021 (Flutter)
 
-This is a small project consists of Three tasks for Fatura flutter hackathon.
+This is a hackathon project consists of Three tasks for Fatura flutter hackathon.
 
 ## Goal
-This project consists of three tasks :-
+This project consists of three tasks :
+
 1,2 :  small app consists of FAB and container  when i pressed on FAB it changes container Color
 but when i pressed on FAB it Rebuild Background widget which it doesn't no need to rebuild
 you need to optimize build function as when i pressed on Button don't rebuild Background widget
